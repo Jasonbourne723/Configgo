@@ -21,8 +21,12 @@ if (app.Environment.IsDevelopment())
 }
 app.UseHttpsRedirection();
 app.UseAuthorization();
+
+app.UseStaticFiles();
+
 app.UseRouting();
 app.MapBlazorHub();
+app.MapFallbackToPage("/_Host");
 app.MapControllers();
 app.UseInject();
 app.Run();
