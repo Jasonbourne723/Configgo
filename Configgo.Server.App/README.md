@@ -1,1 +1,0 @@
-# Configgo.Server.App

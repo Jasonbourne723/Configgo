@@ -1,0 +1,46 @@
+﻿@page "/VHost"
+@using AntDesign.TableModels
+@using AntDesign.Core.Extensions
+
+<PageContainer Title="VHost">
+
+    <Table TItem="VHostDto" >
+
+        <GenerateColumns Range="0.." />
+
+        <ActionColumn Title="Action">
+            <Space Size=@("middle")>
+                <SpaceItem>
+                    <a>Invite @context.Name</a>
+                </SpaceItem>
+                <SpaceItem>
+                    <a>Delete</a>
+                </SpaceItem>
+            </Space>
+        </ActionColumn>
+    </Table>
+
+    <p style="text-align: center; margin-top: 24px;">
+        Want to add more pages? Please refer to
+        <a href="https://github.com/ant-design-blazor/ant-design-pro-blazor" target="_blank" rel="noopener noreferrer">
+            ant-design-pro-blazor project
+        </a>
+        .
+    </p>
+</PageContainer>
+
+@code {
+    @using System.Collections.Generic
+    @inject IVHostService _vhostService
+    int _pageIndex = 1;
+    int _pageSize = 10;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var vhosts = await _vhostService.GetPage(_pageIndex, _pageSize);
+        await base.OnInitializedAsync();
+    }
+
+
+
+}

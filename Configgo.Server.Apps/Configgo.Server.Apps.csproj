@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Pages\_Host.cshtml.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AntDesign" Version="0.14.4" />
+    <PackageReference Include="AntDesign.Charts" Version="0.3.1" />
+    <PackageReference Include="AntDesign.ProLayout" Version="0.14.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -22,6 +22,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
@@ -33,6 +34,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Configgo.Infra\Configgo.Infra.csproj" />
+    <ProjectReference Include="..\Configgo.Service\Configgo.Service.csproj" />
   </ItemGroup>
 
 </Project>
