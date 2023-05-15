@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configgo.Service", "Configg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAntDesignApp", "MyAntDesignApp\MyAntDesignApp.csproj", "{7BE5EFF7-27D1-4C4E-BF39-DC051E55F6B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configgo.Apps", "Configgo.Apps\Configgo.Apps.csproj", "{DCCA7489-7C31-46D5-A90B-1C31D94EB558}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7BE5EFF7-27D1-4C4E-BF39-DC051E55F6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BE5EFF7-27D1-4C4E-BF39-DC051E55F6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BE5EFF7-27D1-4C4E-BF39-DC051E55F6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCA7489-7C31-46D5-A90B-1C31D94EB558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCA7489-7C31-46D5-A90B-1C31D94EB558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCA7489-7C31-46D5-A90B-1C31D94EB558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCA7489-7C31-46D5-A90B-1C31D94EB558}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
